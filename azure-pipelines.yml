@@ -1,1 +1,9 @@
-# my pipeline
+- main
+ 
+  vmImage: ubuntu-latest
+
+variables:
+  buildConfiguration: 'Release'
+
+- script: dotnet build --configuration $(buildConfiguration)
+  displayName: dotnet build $(buildConfiguration)
