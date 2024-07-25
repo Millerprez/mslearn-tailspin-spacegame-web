@@ -1,5 +1,5 @@
 - main
- 
+
   vmImage: ubuntu-latest
 
 variables:
